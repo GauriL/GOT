@@ -1,6 +1,8 @@
 <template>
   <div class="people-card">
     <h2 class="card-title">GOT MEMBERS</h2>
+    <hr class="line-below-name" />
+    <br>
     <ul class="people-list">
       <li v-for="person in visiblePeople" :key="person.slug" class="person-item">
         <router-link :to="{ name: 'person-profile', params: { slug: person.slug }}" class="person-link">
