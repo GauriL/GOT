@@ -7,7 +7,6 @@
         <li v-for="memberName in memberNames" :key="memberName">{{ memberName }}</li>
       </ul>
       <br>
-      <button @click="fetchHouse">Refresh House</button>
     </div>
     <div v-else>
       <p>Loading...</p>
